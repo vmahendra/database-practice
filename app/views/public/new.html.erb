@@ -1,0 +1,25 @@
+<body>
+<%= form_for (@album), url:{:action => 'create' }  do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :artist %>
+    <%= f.text_field :artist_old %>
+  </p>
+
+  <p>
+    <%= f.label :genre %>
+    <%= f.text_field :genre %>
+  </p>
+
+  <p>
+    <%= f.label :release_date %>
+    <%= f.datetime_select :release_date %>
+  </p>
+
+  <%= f.submit  %>
+<% end %>
+</body>

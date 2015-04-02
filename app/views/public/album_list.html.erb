@@ -1,0 +1,5 @@
+<body>
+<% for album in @albums -%>
+<%= link_to(album.title, :controller =>'public', :action => 'show', :id => album.id) %> - <%= album.artist_old %><br>
+<% end -%>
+</body>
